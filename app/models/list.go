@@ -1,11 +1,11 @@
 package models
 
-type JsList struct {
-	ID       int             `json:"id"`
-	Name     string          `json:"name"`
-	Type     string          `json:"type"`
-	User     string          `json:"user"`
-	Color    string          `json:"color"`
-	Items    []JsListItem    `json:"items"`
-	Products []JsListProduct `json:"products"`
+type List struct {
+	ID       int           `json:"id"`
+	Name     string        `json:"name" gforms:"name"`
+	Type     string        `json:"type" gforms:"type"`
+	User     string        `json:"user"`
+	Color    string        `json:"color" gforms:"color"`
+	Items    []ListItem    `json:"items"`
+	Products []ListProduct `json:"products"`
 }

@@ -6,9 +6,10 @@ module:testrunner
 
 GET     /                                       App.Index
 
-GET     /list                                   List.GetLists
-GET     /list/:id                               List.GetList
-POST    /list                                   List.PostList
+GET     /list                                   List.List
+GET     /list/:id                               List.Get
+POST    /list                                   List.Add
+DELETE  /list/:id                               List.Delete
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
